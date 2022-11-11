@@ -1,0 +1,63 @@
+$border: 1px solid black;
+
+@mixin list {
+    ul {
+        list-style-type: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+header {
+    border: $border;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+
+    h1 {
+        margin: 0 auto;
+    }
+}
+
+nav {
+    border: $border;
+    @include list;
+
+    ul {
+        display: flex;
+        
+
+        li {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+main {
+    border: $border;
+}
+
+footer {
+    border: $border;
+    text-align: center;
+    width: 100%;
+}

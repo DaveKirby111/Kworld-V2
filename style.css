@@ -1,3 +1,24 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,46 +27,129 @@ html, body {
   height: 100%;
 }
 
-.content-container {
+body {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-.main-content {
-  display: flex;
-  flex: 1;
-}
-
 header {
-  border: 1px solid black;
   display: flex;
   align-items: center;
-  padding: 30px;
+  padding: 10px;
+  background-color: lightgray;
 }
 header h1 {
   margin: 0 auto;
+  font-size: 50px;
 }
 
 nav {
-  border: 1px solid black;
+  border-top: 2px solid darkgray;
+  border-bottom: 2px solid darkgray;
+  background-color: lightgray;
 }
 nav ul {
   list-style-type: none;
-}
-nav ul {
   display: flex;
+}
+nav ul li {
+  border-right: 2px solid darkgray;
 }
 nav ul li a {
   text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: black;
+  font-size: 15px;
+}
+nav ul li a:hover {
+  background-color: black;
+  color: rgb(9, 177, 9);
 }
 
-main {
-  border: 1px solid black;
+.row {
+  display: flex;
+}
+.row .column {
+  border-right: 2px solid black;
+  width: 50%;
+  height: 25vh;
+  overflow: auto;
+  background-color: white;
+  color: #000;
+  margin-left: 10px;
+  padding: 10px;
+}
+.row .column h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.row .column h4 {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.content main {
+  background-color: rgb(49, 46, 46);
+  color: rgb(9, 177, 9);
+  flex: 1;
+}
+.content main .main-cont {
+  margin: 50px;
+}
+.content main h2 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.content main p {
+  margin-bottom: 20px;
+}
+
+.likes {
+  border: 2px solid rgb(9, 177, 9);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 700px;
+}
+.likes tr {
+  border: 2px solid rgb(9, 177, 9);
+}
+.likes tr th {
+  border: 2px solid rgb(9, 177, 9);
+  padding: 10px;
+  font-size: 20px;
+}
+.likes tr td {
+  border: 2px solid rgb(9, 177, 9);
+  padding: 10px;
+}
+.likes caption {
+  font-size: 15px;
+  caption-side: bottom;
+  border: 2px solid rgb(9, 177, 9);
 }
 
 footer {
-  border: 1px solid black;
+  padding: 10px;
+  background-color: lightgray;
+}
+footer p {
   text-align: center;
-  width: 100%;
 }/*# sourceMappingURL=style.css.map */

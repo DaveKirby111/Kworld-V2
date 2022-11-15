@@ -29,7 +29,7 @@ html, body {
 
 body {
   font-size: 15px;
-  text-transform: capitalize;
+  font-family: "Times New Roman";
 }
 
 .container {
@@ -47,6 +47,7 @@ header {
 header h1 {
   margin: 0 auto;
   font-size: 50px;
+  text-transform: capitalize;
 }
 
 nav {
@@ -60,6 +61,7 @@ nav ul {
 }
 nav ul li {
   border-right: 2px solid darkgray;
+  text-transform: capitalize;
 }
 nav ul li a {
   text-decoration: none;
@@ -92,10 +94,12 @@ nav ul li a:hover {
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 20px;
+  text-transform: capitalize;
 }
 .row .column h4 {
   color: blue;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .content {
@@ -108,25 +112,81 @@ nav ul li a:hover {
   color: rgb(9, 177, 9);
   flex: 1;
 }
+.content main h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 .content main .main-cont {
   margin: 50px;
+}
+.content main .main-cont img {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.content main .main-cont .claire {
+  height: 400px;
+  width: 200px;
+}
+.content main .main-cont .farron {
+  height: 300px;
+  width: 450px;
+}
+.content main .main-cont .leli {
+  height: 350px;
+  width: 450px;
+}
+.content main .main-cont .AW {
+  height: 350px;
+  width: 450px;
+}
+.content main .main-cont a img {
+  margin-left: 50px;
 }
 .content main h2 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
   font-size: 30px;
+  text-transform: capitalize;
 }
 .content main p {
   margin-bottom: 20px;
+}
+
+.games img {
+  padding-bottom: 20px;
+}
+.games h3 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.games p {
+  padding-bottom: 20px;
+}
+
+.movies img {
+  padding-bottom: 20px;
+}
+.movies h3 {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+.movies p {
+  padding-bottom: 20px;
 }
 
 .likes {
   border: 2px solid rgb(9, 177, 9);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   margin-bottom: 20px;
   width: 700px;
+  text-transform: capitalize;
 }
 .likes tr {
   border: 2px solid rgb(9, 177, 9);
@@ -143,7 +203,36 @@ nav ul li a:hover {
 .likes caption {
   font-size: 15px;
   caption-side: bottom;
-  border: 2px solid rgb(9, 177, 9);
+}
+
+.gallery tr td {
+  padding: 20px;
+}
+.gallery tr td img {
+  height: 200px;
+  width: 250px;
+}
+
+.email input {
+  text-transform: capitalize;
+}
+.email label {
+  margin-right: 10px;
+}
+.email .message {
+  display: flex;
+}
+.email .name {
+  margin-left: 15px;
+}
+.email .sub {
+  margin-left: 5px;
+}
+.email .send {
+  margin-left: 70px;
+}
+.email .e-mail {
+  margin-left: 15px;
 }
 
 footer {
@@ -152,4 +241,5 @@ footer {
 }
 footer p {
   text-align: center;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

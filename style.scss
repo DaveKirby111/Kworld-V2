@@ -9,6 +9,8 @@ $color: rgb(9, 177, 9);
 $linkC: black;
 $Fsize: 15px;
 $tshadow: 2px 2px 2px black;
+$ffamily: "Courier New";
+$ffamily2: "Times New Roman";
 
 * {
     box-sizing: border-box;
@@ -20,7 +22,7 @@ html, body {
 
 body {
     font-size: $Fsize;
-    text-transform: capitalize;
+    font-family: $ffamily2;
 }
 
 .container {
@@ -38,6 +40,7 @@ header {
     h1 {
         margin: 0 auto;
         font-size: 50px;
+        text-transform: capitalize;
     }
 }
 
@@ -52,6 +55,8 @@ nav {
 
         li {
             border-right: $border2;
+            text-transform: capitalize;
+            
 
             a {
                 text-decoration: none;
@@ -90,11 +95,13 @@ nav {
             margin-top: 10px;
             margin-bottom: 20px;
             font-size: 20px;
+            text-transform: capitalize;
         }
 
         h4 {
             color: blue;
             margin-bottom: 10px;
+            text-transform: capitalize;
         }
     }
 }
@@ -110,8 +117,47 @@ nav {
         color: $color;
         flex: 1;
 
+        h3 {
+            text-transform: capitalize;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
         .main-cont {
             margin: 50px;
+
+            img {
+                height: 150px;
+                width: 250px;
+                margin-bottom: 20px;
+            }
+            .claire {
+                height: 400px;
+                width: 200px;
+            }
+
+            .farron {
+                height: 300px;
+                width: 450px;
+            }
+
+            .leli {
+                height: 350px;
+                width: 450px;
+            }
+
+            .AW {
+                
+                    height: 350px;
+                    width: 450px;
+
+            }
+
+            a {
+                img {
+                    margin-left: 50px;
+                }
+            }
         }
 
         h2 {
@@ -119,6 +165,7 @@ nav {
             margin-top: 10px;
             margin-bottom: 20px;
             font-size: 30px;
+            text-transform: capitalize;
         }
 
         p {
@@ -127,13 +174,49 @@ nav {
     }
 }
 
+.games {
+
+    img {
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        font-size: 30px;
+    }
+
+    p {
+        padding-bottom: 20px;
+    }
+}
+
+.movies {
+
+    img {
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        font-size: 30px;
+    }
+
+    p {
+        padding-bottom: 20px;
+    }
+}
+
 
 .likes {
     border: 2px solid rgb(9, 177, 9);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     margin-bottom: 20px;
     width: 700px;
+    text-transform: capitalize;
 
      tr {
         border: 2px solid rgb(9, 177, 9);
@@ -147,14 +230,61 @@ nav {
         td {
             border: 2px solid rgb(9, 177, 9);
             padding: 10px;
+            
         }
      }
 
      caption {
         font-size: 15px;
         caption-side: bottom;
-        border: 2px solid rgb(9, 177, 9);
      }
+}
+
+.gallery {
+
+    tr {
+       td {
+        padding: 20px;
+
+        img {
+            height: 200px;
+            width: 250px;
+        }
+
+       }
+    }
+}
+
+.email {
+
+    input {
+        text-transform: capitalize;
+    }
+
+    label {
+        margin-right: 10px;
+    }
+
+    .message {
+        display: flex;
+    }
+
+    .name {
+        margin-left: 15px;
+    }
+
+    .sub {
+        margin-left: 5px;
+    }
+
+    .send {
+        margin-left: 70px;
+    }
+
+    .e-mail {
+        margin-left: 15px;
+    }
+
 }
 
 
@@ -164,5 +294,6 @@ footer {
 
     p {
         text-align: center;
+        text-transform: capitalize;
     }
 }

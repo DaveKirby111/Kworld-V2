@@ -41,6 +41,30 @@
              <main>
 
                 <div class="main-cont">
+
+                    <form action="email.php" method="post" enctype="text/plain" class="email">
+
+                        <label for="name">name:</label>
+                        <input type="text" name="name" id="name" placeholder="Name..." class="name"><br><br>
+
+                        <label for="email">email: </label>
+                        <input type="text" name="email" id="email" placeholder="Email..." class="e-mail"><br><br>
+
+                        <label for="subject">subject:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject..." class="sub"><br><br>
+
+                        <div class="message">
+
+                        <label for="message">message:</label>
+                        <textarea name="message" id="message" cols="50" rows="20" placeholder="Message..."></textarea>
+                        
+                        </div>
+
+                        <br>
+
+                        <input type="submit" value="send" class="send">
+                        <input type="reset" value="clear">
+                    </form>
                     
                 </div>
 

@@ -213,11 +213,15 @@ nav ul li a:hover {
   width: 250px;
 }
 
-.email input {
-  text-transform: capitalize;
+.email {
+  background-color: lightgray;
+  padding: 20px;
+  color: #000;
+  border: 5px double black;
 }
 .email label {
   margin-right: 10px;
+  text-transform: capitalize;
 }
 .email .message {
   display: flex;
@@ -230,6 +234,20 @@ nav ul li a:hover {
 }
 .email .send {
   margin-left: 70px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.email .send:hover {
+  background-color: black;
+  color: rgb(9, 177, 9);
+}
+.email .clear {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.email .clear:hover {
+  background-color: black;
+  color: rgb(9, 177, 9);
 }
 .email .e-mail {
   margin-left: 15px;

@@ -257,12 +257,14 @@ nav {
 
 .email {
 
-    input {
-        text-transform: capitalize;
-    }
+    background-color: $bc3;
+    padding: 20px;
+    color: #000;
+    border: 5px double black;
 
     label {
         margin-right: 10px;
+        text-transform: capitalize;
     }
 
     .message {
@@ -279,6 +281,23 @@ nav {
 
     .send {
         margin-left: 70px;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    .send:hover {
+        background-color: $linkC;
+        color: $color;
+    }
+
+    .clear {
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    .clear:hover {
+        background-color: $linkC;
+        color: $color;
     }
 
     .e-mail {

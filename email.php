@@ -18,10 +18,10 @@ $messagesent = false;
                 $to = "dkirby111@aol.com";
                 $body = " ";
                 
-                
+                $sub = $subject;
                 $body = $message; 
 
-                mail($to, $email, $body, $subject); 
+                mail($to, $sub,  $body); 
 
                 echo "Your Email has been sent.";
 

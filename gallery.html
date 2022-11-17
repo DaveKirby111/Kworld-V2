@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirby's World Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/modal.js"></script>
 </head>
 <body>
 
@@ -42,6 +43,15 @@
 
             <div class="main-cont">
 
+
+                <img src="images/header.jpg" alt="Kirby's World" class="kworld" id="KWorld">
+
+                <div id="modal1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-img" id="kw" style="width: 1500px; height: 500px;">
+                    <div id="caption"></div>
+                </div>
+
                 <table class="gallery">
 
                     <tr>
@@ -62,11 +72,6 @@
 
                 </table>
 
-                
-
-                
-
-
             </div>
            
 
@@ -79,6 +84,10 @@
         </footer>
 
     </div>
+
+    <script>
+        modalimg();
+    </script>
     
 </body>
 </html>

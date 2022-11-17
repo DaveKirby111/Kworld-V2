@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirby's World Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/DateTime.js"></script>
 </head>
 <body>
 
@@ -14,7 +15,7 @@
         <header>
 
             <a href="index.html">
-            <img src="images/DWlogo.jpg" alt="logo">
+            <img src="images/DWlogo.jpg" alt="logo" class="logo">
             </a>
 
             <h1>kirby's world</h1>
@@ -57,6 +58,15 @@
             <main>
 
                 <div class="main-cont">
+
+                    <div class="datetime">
+                        <button id="datebtn" onclick="currentdate();">click for date</button>
+                        <p id="date"></p>
+                        <p id="day"></p>
+                        <p id="time"></p>
+                    </div>
+
+            
 
                 <h2>introduction</h2>
 

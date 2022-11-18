@@ -405,6 +405,49 @@ footer {
     }
 }
 
+.blog {
+
+
+    h3 a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    h3 a:hover {
+        text-decoration: underline;
+    }
+
+    .profile {
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;     
+    }
+
+    .post-text {
+        color: black;
+    }
+
+   .me {
+    color: blue;
+    text-transform: capitalize;
+    margin-right: 10px;
+   }
+
+   .post {
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+   }
+
+   time {
+    color: black;
+   }
+
+}
+
 @media screen and (max-width: 620px) {
     .container {
       max-width: 100%;

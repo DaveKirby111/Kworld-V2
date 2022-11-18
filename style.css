@@ -350,6 +350,37 @@ footer p {
   text-transform: capitalize;
 }
 
+.blog h3 a {
+  color: blue;
+  text-decoration: none;
+}
+.blog h3 a:hover {
+  text-decoration: underline;
+}
+.blog .profile {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog .post-text {
+  color: black;
+}
+.blog .me {
+  color: blue;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+.blog .post {
+  margin-bottom: 50px;
+  background-color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1.5fr 4fr;
+}
+.blog time {
+  color: black;
+}
+
 @media screen and (max-width: 620px) {
   .container {
     max-width: 100%;

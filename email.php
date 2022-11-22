@@ -21,7 +21,7 @@ $messagesent = false;
                 $sub = $subject;
                 $body = $message; 
 
-                mail($to, $sub,  $body); 
+                mail($to, $sub,  $body, $name); 
 
                 echo "Your Email has been sent.";
 

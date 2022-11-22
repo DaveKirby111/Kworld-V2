@@ -7,8 +7,11 @@
     <title>Kirby's World Home</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="js/DateTime.js"></script>
 
+
+    <script src="js/DateTime.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/blog.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -30,22 +33,22 @@
 <div class="container-fluid">
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a href="index.php" class="nav-link">home</a>
+            <a href="index.php" class="nav-link link-dark">home</a>
         </li>
         <li class="nav-item">
-            <a href="games.php" class="nav-link">games</a>
+            <a href="games.php" class="nav-link link-dark">games</a>
         </li>
         <li class="nav-item">
-            <a href="movies.php" class="nav-link">movies</a>
+            <a href="movies.php" class="nav-link link-dark">movies</a>
         </li>
         <li class="nav-item">
-            <a href="gallery.php" class="nav-link">gallery</a>
+            <a href="gallery.php" class="nav-link link-dark">gallery</a>
         </li>
         <li class="nav-item">
-            <a href="contact.php" class="nav-link">contact</a>
+            <a href="contact.php" class="nav-link link-dark">contact</a>
         </li>
         <li class="nav-item">
-            <a href="blogp.php" class="nav-link">blog page</a>
+            <a href="blogp.php" class="nav-link link-dark">blog page</a>
         </li>
     </ul>
 </div>

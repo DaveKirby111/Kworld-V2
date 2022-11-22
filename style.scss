@@ -18,16 +18,19 @@ $h-color: lightgray;
 
 header {
     background-color: $h-color;
+    font-family: 'Times New Roman', Times, serif;
+
 
     h1 {
         margin: 0 auto;
+        font-size: 60px;
     }
 }
 
 nav {
     background-color: $h-color;
     border-top: 2px solid darkgray;
-    border-bottom: 2px solid darkgray;
+    border-bottom: 3px solid darkgray;
 
     ul {
 
@@ -42,11 +45,23 @@ nav {
 .main {
     background-color: $mainbg;
     color: $t-color;
+    font-family: 'Courier New', monospace;
 
     h2 {
         text-align: center;
         text-transform: capitalize;
-        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        text-transform: capitalize;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
     }
 }
 
@@ -69,6 +84,7 @@ nav {
 
     #datebtn {
         text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif
     }
 
     p {
@@ -76,9 +92,132 @@ nav {
     }
 }
 
+.contact {
+    background-color: $h-color;
+    padding: 20px;
+    color: black;
+    border: 5px double black;
+}
+
+.movie {
+    img {
+        height: 200px;
+        width: 300px;
+        margin-top: 40px;
+    }
+}
+
+.game {
+    img {
+        height: 200px;
+        width: 300px;
+        margin-top: 40px;
+    }
+}
+
+.gallery {
+
+    td {
+        padding: 10px;
+    }
+
+    img {
+        height: 250px;
+        width: 350px;
+    }
+}
+
+.kworld {
+    height: 300px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+#KWorld {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #KWorld:hover {
+    opacity: 10%;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-img {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-img, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(0);
+    }
+    to {
+      -webkit-transform: scale(1);
+    }
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 footer {
     background-color: $h-color;
     padding: 5px;
+    border-top: 3px solid darkgray;
 
     p {
         margin-top: 10px;

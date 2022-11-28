@@ -1,8 +1,6 @@
 function blogp() {
 
-let hdr = "";
-
-let post = "";
+    console.log("hi");
 
 const header = [
 
@@ -18,6 +16,8 @@ const header = [
 
 ];
 
+
+
 const posts = [
 
     "Capcom is reportedly adding in-game purchases to the RE4 remake. Yeah, I don't see this going over well.",
@@ -32,12 +32,18 @@ const posts = [
 
 ];
 
-posts.forEach(myFunction);
 
-document.getElementsByClassName("post-text").innerHTML = post;
 
-function myFunction(item) {
-    post += item + "<br>"; 
-  }
+
+
+const p = document.querySelectorAll();
+
+let i = 0;
+let post = "";
+
+while ( posts[i] ) {
+    post += posts[i];
+    i++;
+}
 
 }
